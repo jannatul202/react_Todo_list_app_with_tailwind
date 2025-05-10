@@ -31,7 +31,7 @@ const TodoApp = () => {
           <input 
           value={text}
           onChange={(e)=>setText(e.target.value)}
-          className='bg-gray-200 border-1 border-gray-400 p-3 w-100'
+          className='bg-gray-200 border-1 border-gray-400 p-3'
           type="text" name='text' id='text' placeholder='Type here.......' />
         </div>
         <button 
@@ -52,7 +52,7 @@ const TodoApp = () => {
                             <input className='mr-5' type="checkbox" />
                             <span>{listIteam.text}</span>
                             <button 
-                            onClick={()=>deleteTask(listIteam.id)} 
+                            onClick={()=>deleteTask(listIteam.id)}
                             className='bg-red-500 text-white px-4 py-2 rounded-lg cursor-pointer'>DELETE</button>
                         </li>
                     ))
